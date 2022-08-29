@@ -18,12 +18,23 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:importantForAccessibility="no"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/me"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.8"
             app:srcCompat="@drawable/ic_quote_mark" />
+
+        <TextView
+            android:id="@+id/me"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mememe"
+            android:textAlignment="center"
+            android:textColor="@color/blue"
+            android:textSize="30sp"
+            app:layout_constraintTop_toBottomOf="@id/ic_quote_mark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <LinearLayout

@@ -13,10 +13,11 @@
     <string name="setting_button">Setting BT</string>
     <string name="profile">Profile</string>
     <string name="avatar">Avatar</string>
-    <string name="profile_name">Profile Name</string>
+    <string name="profile_name">Profile Name\nLê Anh Quốc-2050531200262</string>
     <string name="_125">125</string>
     <string name="friends">Friends</string>
     <string name="_250">250</string>
     <string name="followers">Followers</string>
     <string name="_3">3</string>
+    <string name="mememe">Lê Anh Quốc\n2050531200262</string>
 </resources>
