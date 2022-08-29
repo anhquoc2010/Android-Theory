@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">W1 E2 UI</string>
+    <string name="user_name">User Name</string>
+    <string name="password">Password</string>
+    <string name="login_me">LOGIN ME</string>
+    <string name="lost_password">Lost password?</string>
+    <string name="fuck">fuck</string>
+    <string name="mail_email_com">mail@email.com</string>
+    <string name="_99_999_555_222">+99 999 555 222</string>
+    <string name="me007">me007</string>
+    <string name="cssauthor_com">cssauthor.com/</string>
+    <string name="back">Back</string>
+    <string name="setting_button">Setting BT</string>
+    <string name="profile">Profile</string>
+    <string name="avatar">Avatar</string>
+    <string name="profile_name">Profile Name</string>
+    <string name="_125">125</string>
+    <string name="friends">Friends</string>
+    <string name="_250">250</string>
+    <string name="followers">Followers</string>
+    <string name="_3">3</string>
+</resources>
