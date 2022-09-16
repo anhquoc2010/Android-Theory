@@ -8,9 +8,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.GridView;
 import android.widget.ImageButton;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 
 public class ProfileActivity extends AppCompatActivity {
