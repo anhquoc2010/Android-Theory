@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp">
+
+    <ImageView
+        android:id="@+id/iv_gender62"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:importantForAccessibility="no"
+        android:src="@drawable/female" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_msv62"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/msv" />
+
+        <TextView
+            android:id="@+id/tv_name62"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/h_t_n" />
+
+        <TextView
+            android:id="@+id/tv_phone62"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/s_t" />
+
+        <TextView
+            android:id="@+id/tv_mail62"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/email" />
+    </LinearLayout>
+</LinearLayout>

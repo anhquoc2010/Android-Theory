@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">QuanLySinhVien</string>
+    <string name="add">Thêm</string>
+    <string name="exit">Thoát</string>
+    <string name="msv">Mã SV</string>
+    <string name="h_t_n">Họ Tên</string>
+    <string name="s_t">SĐT</string>
+    <string name="email">Email</string>
+</resources>
