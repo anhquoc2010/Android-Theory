@@ -20,18 +20,18 @@ public class SinhVienDAO {
 
     //Lấy tất cả sinh viên
     public List<SinhVien> getAllSinhVien() {
-        String sql = "SELECT * FROM SinhVien";
+        String sql = "SELECT * FROM SINHVIEN";
         List<SinhVien> sinhVienList62 = new ArrayList<>();
         SQLiteDatabase db = dbHelper.getReadableDatabase();
         Cursor cursor = db.rawQuery(sql, null);
         cursor.moveToFirst();
         while (!cursor.isAfterLast()) {
-            SinhVien sinhVien62 = new SinhVien();
-            sinhVien62.setMaSV62(cursor.getInt(0));
-            sinhVien62.setTenSV62(cursor.getString(1));
-            sinhVien62.setGioiTinh62(cursor.getInt(2));
-            sinhVien62.setDienThoai62(cursor.getString(3));
-            sinhVien62.setEmail62(cursor.getString(4));
+            int masv62 = cursor.getInt(0);
+            String hoten62 = cursor.getString(1);
+            int gioitinh62 = cursor.getInt(2);
+            String dienthoai62 = cursor.getString(3);
+            String email62 = cursor.getString(4);
+            SinhVien sinhVien62 = new SinhVien(masv62, hoten62, gioitinh62, dienthoai62, email62);
             sinhVienList62.add(sinhVien62);
             cursor.moveToNext();
         }

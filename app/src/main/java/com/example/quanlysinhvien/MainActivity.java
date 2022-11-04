@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         sinhVienList62 = sinhVienDAO62.getAllSinhVien();
 
         //Set adapter for listview
-        sinhVienAdapter62 = new SinhVienAdapter(MainActivity.this, sinhVienList62);
+        sinhVienAdapter62 = new SinhVienAdapter(getApplicationContext(), sinhVienList62);
         lvSinhVien62.setAdapter(sinhVienAdapter62);
     }
 

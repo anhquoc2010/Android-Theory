@@ -14,7 +14,7 @@ public class DbHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
-        String sqlSVCreate62 = "CREATE TABLE SINHVIEN (MASV INTEGER PRIMARY KEY AUTOINCREMENT, HOTEN TEXT, GIOITINH INTEGER, DIENTHOAI TEXT, EMAIL TEXT)";
+        String sqlSVCreate62 = "CREATE TABLE IF NOT EXISTS SINHVIEN (MASV INTEGER PRIMARY KEY AUTOINCREMENT, HOTEN TEXT, GIOITINH INTEGER, DIENTHOAI TEXT, EMAIL TEXT)";
         sqLiteDatabase.execSQL(sqlSVCreate62);
 
         String sqlInsert62 = "INSERT INTO SINHVIEN (HOTEN, GIOITINH, DIENTHOAI, EMAIL) VALUES ('Lê Anh Quốc', 1, '2050531200262', '2050531200262@sv.ute.udn.vn')";
