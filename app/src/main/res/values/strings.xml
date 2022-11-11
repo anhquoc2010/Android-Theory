@@ -1,9 +1,16 @@
 <resources>
     <string name="app_name">QuanLySinhVien</string>
     <string name="add">Thêm</string>
+    <string name="update">Cập nhật</string>
     <string name="exit">Thoát</string>
     <string name="msv">Mã SV</string>
     <string name="h_t_n">Họ Tên</string>
     <string name="s_t">SĐT</string>
     <string name="email">Email</string>
+    <string name="th_m">Thêm</string>
+    <string name="tho_t">Thoát</string>
+    <string name="gi_i_t_nh">Giới Tính</string>
+    <string name="nam">Nam</string>
+    <string name="n">Nữ</string>
+    <string name="form_sinh_vi_n">Form Sinh Viên</string>
 </resources>
