@@ -5,14 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="30dp"
     tools:context=".FormSinhVienActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
         android:gravity="center"
         android:text="@string/form_sinh_vi_n"
-        android:textSize="24dp" />
+        android:textSize="26sp"
+        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,16 +24,19 @@
         android:weightSum="10">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:layout_weight="3"
-            android:text="@string/msv" />
+            android:text="@string/msv"
+            android:textSize="18sp"
+            android:textStyle="italic" />
 
         <TextView
             android:id="@+id/tv_msv62"
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:layout_weight="7" />
+            android:layout_weight="7"
+            android:textSize="18sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -40,14 +46,16 @@
         android:weightSum="10">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:layout_weight="3"
-            android:text="@string/h_t_n" />
+            android:text="@string/h_t_n"
+            android:textSize="18sp"
+            android:textStyle="italic" />
 
         <EditText
             android:id="@+id/et_name62"
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_weight="7"
             android:hint="@string/h_t_n"
@@ -63,14 +71,16 @@
         android:weightSum="10">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:layout_weight="3"
-            android:text="@string/gi_i_t_nh" />
+            android:text="@string/gi_i_t_nh"
+            android:textSize="18sp"
+            android:textStyle="italic" />
 
         <RadioGroup
             android:id="@+id/rg_gender62"
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_weight="7"
             android:orientation="horizontal">
@@ -97,15 +107,18 @@
         android:weightSum="10">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:layout_weight="3"
-            android:text="@string/email" />
+            android:text="@string/email"
+            android:textSize="18sp"
+            android:textStyle="italic" />
 
         <EditText
             android:id="@+id/et_mail62"
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
+
             android:layout_weight="7"
             android:hint="@string/email"
             android:importantForAutofill="no"
@@ -119,15 +132,18 @@
         android:weightSum="10">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:layout_weight="3"
-            android:text="@string/s_t" />
+            android:text="@string/s_t"
+            android:textSize="18sp"
+            android:textStyle="italic" />
 
         <EditText
             android:id="@+id/et_phone62"
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
             android:layout_weight="7"
             android:hint="@string/s_t"
             android:importantForAutofill="no"

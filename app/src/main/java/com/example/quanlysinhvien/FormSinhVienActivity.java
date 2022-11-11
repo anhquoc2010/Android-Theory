@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.RadioGroup;
 
 import com.example.quanlysinhvien.dao.SinhVienDAO;
@@ -22,11 +23,16 @@ public class FormSinhVienActivity extends AppCompatActivity {
         binding62 = ActivityFormSinhVienBinding.inflate(getLayoutInflater());
         setContentView(binding62.getRoot());
 
+        sinhVienDAO62 = new SinhVienDAO(FormSinhVienActivity.this);
+
+        binding62.tvMsv62.setText((sinhVienDAO62.getMaxMaSV() + 1 + ""));
+
         Intent intent62 = getIntent();
         SinhVien sinhVien62 = (SinhVien) intent62.getSerializableExtra("sinhvien");
         if (sinhVien62 != null) {
             binding62.btnAdd62.setText(getString(R.string.update));
             binding62.btnAdd62.setTag("update");
+            binding62.tvMsv62.setText(sinhVien62.getMaSV62() + "");
             binding62.etName62.setText(sinhVien62.getTenSV62());
             binding62.etMail62.setText(sinhVien62.getEmail62());
             binding62.etPhone62.setText(sinhVien62.getDienThoai62());
@@ -38,8 +44,6 @@ public class FormSinhVienActivity extends AppCompatActivity {
                 gender62 = 0;
             }
         }
-
-        sinhVienDAO62 = new SinhVienDAO(FormSinhVienActivity.this);
 
         binding62.rgGender62.setOnCheckedChangeListener((radioGroup, i) -> {
             if (i == R.id.rb_male62) {

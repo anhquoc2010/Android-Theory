@@ -82,4 +82,15 @@ public class SinhVienDAO {
         SQLiteDatabase db62 = dbHelper62.getWritableDatabase();
         db62.delete("SINHVIEN", "MASV = ?", new String[]{String.valueOf(maSV62)});
     }
+
+    //Lấy mã sinh viên lớn nhất
+    public int getMaxMaSV() {
+        String sql62 = "SELECT MAX(MASV) FROM SINHVIEN";
+        SQLiteDatabase db62 = dbHelper62.getReadableDatabase();
+        Cursor cursor = db62.rawQuery(sql62, null);
+        cursor.moveToFirst();
+        int maxMaSV62 = cursor.getInt(0);
+        cursor.close();
+        return maxMaSV62;
+    }
 }
